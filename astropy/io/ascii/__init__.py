@@ -58,6 +58,7 @@ from .fixedwidth import (
     FixedWidthTwoLine,
 )
 from .html import HTML
+from .tdat import Tdat
 from .ipac import Ipac
 from .latex import AASTex, Latex, latexdicts
 from .mrt import Mrt
