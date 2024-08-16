@@ -123,6 +123,17 @@ value in ``Unit.to`` and have those arrays not be converted to Numpy arrays::
 
 Note that it is not yet possible to use ``Quantity`` with dask arrays directly.
 
+.. _whatsnew_7_0_tdat_reader:
+
+Reading and writing TDAT files with ``astropy.io.ascii``
+=======================================
+
+The TDAT format, specified by https://heasarc.gsfc.nasa.gov/docs/software/dbdocs/tdat.html,
+is now supported by the Unified File Read/Write Interface. 
+
+Note that this format is compatible with ``Table`` objects with integer, float,
+and/or string data types, but not ``QTable`` objects or other data types.
+
 Full change log
 ===============
 
