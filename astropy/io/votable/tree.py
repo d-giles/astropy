@@ -3978,6 +3978,8 @@ class Resource(
             ]
             if kwargs["version_1_2_or_later"]:
                 element_sets.append(self.groups)
+                if not kwargs["version_1_4_or_later"]:
+                    del element_sets[0]
             for element_set in element_sets:
                 for element in element_set:
                     element.to_xml(w, **kwargs)
